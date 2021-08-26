@@ -16,6 +16,7 @@ request.onupgradeneeded = function(e) {
 }
 
 // for transaction
+// 
 function addData (type,data) {
     let tx = db.transaction("gallery","readwrite");
     let store = tx.objectStore("gallery");
