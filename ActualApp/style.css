@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.video-container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#record-btn{
+    position:fixed;
+    top:45vh;
+    right:7rem;
+    color: red;
+}
+.record-btn-style{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#capture-btn{
+    position:fixed;
+    top:56vh;
+    right:7rem;
+}
+
+video{
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.filter-container {
+    border: 1px solid white;
+    position: fixed;
+    top: 20vh;
+    left: 5vw;
+    height: 60vh;
+    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:6px 6px 6px 6px;
+}
+
+.filter {
+    border: 1px solid white;
+    height: 18%;
+    border-radius: 20%;
+
+}
+
+.filter-screen-parent {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0
+} 
+
+.zoom{
+    display: flex;
+    position: absolute;
+    bottom:5vh;
+    left:40vw;
+    width:20vw;
+    justify-content: space-evenly;
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height:100vh;
+    width: 100vw;
+    font-weight: 600rem;
+}
+
+.gallery-menu{
+    position:fixed;
+    bottom:6vh;
+    right: 5rem;
+    height: 13vh;
+    width:11vw;
+    cursor: pointer;
+    background-color: white;
+}
+/* .gallery-menu .image{
+    height: 13vh;
+    width: 11vw;
+} */
+
+#timer{
+    position:fixed;
+    top:50vh;
+    right:6.8rem;
+    color: red;
+    /* background-color: white;    */
+    /* height: 5vh;
+    width: 5vw; */
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2.5vw;
+    padding-right: 0.5vw;
+    padding-top: 1.5vh;
+    padding-bottom:2vw;
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+}
+
+.image img,.video video{
+    height: 25vh;
+    width: 18vw;
+    margin-right: 1vw;
+    margin-top:0.5vh;
+    background-color: white;
+    cursor: pointer;
+}
+
+

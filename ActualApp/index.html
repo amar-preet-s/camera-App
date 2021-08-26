@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <div class="frame" style="overflow: hidden";>
+            <video autoplay class="video-player"></video>
+        </div>
+    </div>
+    <div class="filter-screen-parent">
+
+    </div> 
+    <div id="record-btn"><div class="record-btn-style"><img src="https://img.icons8.com/fluent/25/000000/record.png"/></div></div>
+    <div id="timer"><span class="minute">00</span>:<span class="second">00</span></div>
+    <div id="capture-btn"><img src="https://img.icons8.com/ios/40/ffffff/camera--v1.png"/></div>
+    <div class="filter-container">
+        <div style="background-color: #f4a2613d;" class="filter"></div>
+        <div style="background-color: #e85d0440;" class="filter"></div>
+        <div style="background-color: rgba(245, 169, 29, 0.295)" class="filter"></div>
+        <div style="background-color: #2195f323;" class="filter"></div>
+        <div style="background-color: #4caf4f31;" class="filter"></div>
+    </div>
+    <div class="zoom">
+        <button class="zoom-in">ZoomIn</button>
+        <button class="zoom-out">ZoomOut</button>
+    </div>
+    <div class="gallery-menu"></div>
+    <!-- <div class="modal">
+        <div class="title">
+            <span style="display:inline-block;margin-top: 5px;font-family: Brush Script MT, Brush Script Std, cursive;font-size: 40px;">Gallery</span>
+            <span class="close-modal" style="float:right;padding:2px;color:white;background-color: red;height: 30px;width: 30px; cursor: pointer;font-size: 20px;">X</span>
+        </div>
+        <div class="gallery">
+            <div class="image gal_content">
+                <img src="" alt="">
+            </div>
+            <div class="video gal_content">
+                <video src=""></video>
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="script.js"></script>
+<script src="DBscript.js"></script>
+</html>
